@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>elements</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="images/star.ico">
+  </head>
+  <body>
+    <div class="container">
+        <nav class="menu">
+            <a class="paginas" href="#" style="text-decoration: none;">Principal
+                <img src="images/star.ico" width="15px" alt=""></a>
+            <a class="paginas" href="#" style="text-decoration: none;">Seudoelemento
+                <img src="images/star.ico" width="15px" alt=""></a>
+            <a class="paginas" href="#" style="text-decoration: none;">clases
+                <img src="images/star.ico" width="15px" alt=""></a>
+        <div class="container">
+            <!--titulo-->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <section class="titulo">
+                    <h1 class="title">Pseudo-classes</h1>
+                </section>
+            </div>
+            <!--cajas-->
+            <div class="row uno box">
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="uno fondo">
+                        <h1 class="titleDos">:active</h1>
+                        <p>Representa un elemento (como un botón) que el usuario está activando.</p>
+                        <a href="#" class="activado">Activado</a>
+                    <article>
+                </section>
+               <!--primera fila-->
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="dos fondo">
+                        <h1 class="titleDos">:cheked</h1>
+                        <p>El usuario puede activar este estado marcando/seleccionando un elemento, o desactivándolo desmarcando/deseleccionando el elemento.</p>
+                        <div>
+                            <input class="input" type="radio" name="my-input" id="yes">
+                            <label for="yes">Yes</label>
+                          
+                            <input  class="input" type="radio" name="my-input" id="no">
+                            <label for="no">No</label>
+                          </div>
+                    </article>
+                </section>
+
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="tres fondo">
+                        <h1 class="titleDos">:default</h1>
+                        <p>Representa a cualquier elemento deshabilitado. Un elemento se encuentra deshabilitado si no puede ser activado (por ejemplo ser selecionado, hacer click en él o aceptar texto de entrada) ni aceptar el foco.</p>
+                        <div>
+                            <input type="radio" name="season" id="spring">
+                            <label for="spring">Spring</label>
+
+                            <input type="radio" name="season" id="summer" checked>
+                            <label for="summer">Summer</label>
+
+                            <input type="radio" name="season" id="fall">
+                            <label for="fall">Fall</label>
+
+                            <input type="radio" name="season" id="winter">
+                            <label for="winter">Winter</label>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="cuatro fondo">
+                    <h1 class="titleDos">:dir</h1>
+                    <p class="dire" dir="rtl">Coincide con los elementos en función de la direccionalidad del texto contenido en ellos.</p>
+                    </article>
+                </section>
+            </div> 
+            <!--segunda fila-->
+            <div class="row dos box">
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="uno fondo">
+                        <h1 class="titleDos">:disabled</h1>
+                        <p>Representa a cualquier elemento deshabilitado. Un elemento se encuentra deshabilitado si no puede ser activado (por ejemplo ser selecionado, hacer click en él o aceptar texto de entrada) ni aceptar el foco.</p>
+                        <form action="#">
+                            <fieldset id="billing">
+                            <input type="text" placeholder="Nombre" disabled>
+                            <input type="text" placeholder="Dirección" disabled>
+                            <input type="text" placeholder="Código postal" disabled>
+                            </fieldset>
+                        </form>
+                    <article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="dos fondo">
+                        <h1 class="titleDos">:empty</h1>
+                        <p>Representa cualquier elemento que no tenga hijos. Como este cuadro.</p>
+                        <div class="borde"></div>
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="tres fondo">
+                        <h1 class="titleDos">:enabled</h1>
+                        <p>Representa cualquier elemento habilitado. Un elemento está habilitado si puede ser activado (es decir seleccionado, se puede hacer click en él, acepta que se le introduzca texto, etc.) o si accepta el foco.</p>
+                        <form action="url_of_form">
+                            <label for="SecondField"> campo (deshabilitado):</label>
+                            <input  class="enabled" type="text" id="SecondField" value="Ipsum" disabled="disabled"><br>
+                        </form>
+                    </article>
+                </section>
+                
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="cuatro fondo">
+                        <h1 class="titleDos">:first</h1>
+                        <p class="parrafo">Utilizada con la regla-at @page, representa la primera página de un documento impreso.</p>
+                        <button>Imprimir!</button>
+
+                    </article>
+                </section>
+            </div>
+            <!--tercera fila-->
+            <div class="row tres box">
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3" >
+                    <article class=" fondo">
+                        <h1 class="titleDos">:first-child</h1>
+                        <p>Seleccionar y dar estilo a un elemento HTML si es el primer hijo de su padre.</p>
+                        <ul class="pri">
+                            <li class="li">1</li>
+                            <li class="li">1</li>
+                            <li class="li">1</li>
+                            <li class="li">1</li>
+                        </ul> 
+                    <article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="dos fondo">
+                        <h1 class="titleDos">:first-of-type</h1>
+                        <p class="first-t">Seleccionar y dar estilo a un elemento HTML si es el primer elemento de su tipo dentro del contenedor padre.</p>
+                        <p class="first-t">En este caso, lo haré con los párrafos.En total son dos y el primero de ellos tiene estilo.</p>
+                        
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="dos fondo">
+                        <h1 class="titleDos">:focus</h1>
+                        <p>Se activa cuando el ususario activa una entrada de formulario. En este caso un clic.</p>
+                        <input class="focus" value="clic y seré rojo.">
+                    </article>
+                </section> 
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="uno fondo">
+                        <h1 class="titleDos">:fullscreen</h1>
+                        <p>Llama a la hoja de estilos cuando esta en modo de pantalla completa.</p>
+                        <button onclick="openFullscreen();">Open Fullscreen
+                            <img src="images/chihiro.jpg" alt="" style="width: 100%;">
+                        </button>
+                        <script>
+                        // Using JavaScript to open the page in fullscreen mode
+                            let fullscreen = document.querySelector("img");
+                            let button = document.querySelector("button");
+
+                            button.addEventListener("click", () => {
+                            if (!document.fullscreenElement) {
+                                fullscreen?.requestFullscreen();
+                            } else {
+                                document.exitFullscreen();
+                            }
+                            });
+                        </script>
+                    <article>
+                </section>
+                
+            </div> 
+            <!--cuarta fila-->
+            <div class="row cuatro box">
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="uno fondo">
+                        <h1 class="titleDos">:hover</h1>
+                        <p>Se activa los estilos cuando el cursor pasá encima.</p>
+                        <a class="hov" href="#" style="text-decoration: none;">Pasa por aquí</a>
+                    <article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="dos fondo">
+                        <h1 class="titleDos">:indeterminate</h1>
+                        <p>La pseudo-clase :indeterminate de CSS representa cualquier elemento de formulario cuyo estado sea indeterminado.</p>
+                        <div>
+                            <input class="pink" type="checkbox" id="checkbox">
+                            <label for="checkbox">Esta etiqueta comienza con el color lima.</label>
+                        </div>
+                        <div>
+                            <input class="pink" type="radio" id="radio">
+                            <label for="radio">Esta etiqueta comienza con el color lima.</label>
+                        </div>
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="uno fondo">
+                        <h1 class="titleDos">:in-range</h1>
+                        <p> 
+                            Selecciona cualquier input, pero solo cuando tiene un
+                            rango especificado, y su valor está dentro de ese rango.
+                        </p>
+                        <form action="" id="form1">
+                            <p>Los valores entre 1 y 10 son válidos. Mayor a eso es fuera de rango.
+                              <li>
+                                <input id="value1" name="value1" type="number" placeholder="1 a 10" min="1" max="10" value="5" class="out">
+                                <label for="value1">Tu valor esta </label>
+                              </li>
+                            </p>
+                        </form>
+                    <article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="dos fondo">
+                        <h1 class="titleDos">:invalid</h1>
+                        <p>Invalida la información no requerida en una entrada de información.</p>
+                        <label for="age">Your age: (18+)</label>
+                        <input class="age" name="age" type="number" value="5" min="18">
+                    </article>
+                </section>   
+            </div>  
+            <!--quinta fila-->
+            <div class="row cinco box">
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="uno fondo">
+                        <h1 class="titleDos">:lang</h1>
+                        <p>es utilizada para modificar elementos en función del idioma en el que se determina que están.</p>
+                        <div lang="fr"><q>Esta cita en francés tiene una cita <q>anidada</q> adentro.</q></div>
+                    <article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="dos fondo">
+                        <h1 class="titleDos">:last-child</h1>
+                        <p class="last">Representa el último elemento entre un grupo de elementos hermanos.</p>
+                        <p class="last">Representa el último elemento entre un grupo de elementos hermanos.</p>
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="tres fondo">
+                        <h1 class="titleDos">:last-of-type</h1>
+                        <p>Representa el último elemento de su tipo entre un grupo de elementos hermanos.</p>
+                        <h5 class="lastype">Título</h5>
+                        <h5 class="lastype">Párrafo 1</h5>
+                        <h5 class="lastype">Párrafo 2</h5>
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="cuatro fondo">
+                        <h1 class="titleDos">:left</h1>
+                        <p>Utilizada con la regla @page at, representa todas las páginas de la izquierda de un documento impreso.</p>
+                    </article>
+                </section>
+            </div>  
+            <!--sexta fila-->
+            <div class="row seis box">
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="uno fondo">
+                        <h1 class="titleDos">:link</h1>
+                        <p>Representa un elemento que aún no se ha visitado. Coincide con cada elemento no visitado <a>, <area>, o <link> que tiene un atributo href.</p>
+                        <a class="link" href="#ordinary-target">ordinario</a><br>
+                        <a class="link" href="">visitado</a>
+                            
+                    <article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="dos fondo">
+                        <h1 class="titleDos">:not()</h1>
+                        <p>Representa elementos que no coinciden con una lista de selectores. Como evita que se seleccionen elementos específicos, se lo conoce como la pseudoclase de negación.</p>
+                        <h6>Soy un párrafo.</h6>
+                        <h6 class="fancy">¡Soy muy elegante! y no tengo color.</h6>
+                        <h6>NO soy un párrafo.</h6>
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="tres fondo">
+                        <h1 class="titleDos">:nth-child</h1>
+                        <p>Selecciona cada (x) elemento entre cualquier grupo de hermanos.</p>
+                        <ul class="dos">
+                            <span class="nth">💛1</span>
+                            <span class="nth">💛2</span>
+                            <span class="nth">💛3</span>
+                            <span class="nth">💛4</span>
+                            <span class="nth">💛5</span>
+                            <span class="nth">💛6</span>
+                            <span class="nth">💛7</span>
+                            <span class="nth">💛8</span>
+                            
+                        </ul>
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="cuatro fondo">
+                        <h1 class="titleDos">:nth-last-child</h1>
+                        <p>Selecciona uno o más elementos en función de su posición entre un grupo de hermanos, contando desde el final.</p>
+                        <table>
+                            <tbody>
+                              <tr>
+                                <td>Primera línea</td>
+                              </tr>
+                              <tr>
+                                <td>Segunda línea</td>
+                              </tr>
+                              <tr>
+                                <td>Tercera línea</td>
+                              </tr>
+                              <tr>
+                                <td>Cuarta línea</td>
+                              </tr>
+                              <tr>
+                                <td>Quinta línea</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </article>
+                </section>
+            </div> 
+            <!--siete fila-->
+            <div class="row siete box">
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="uno fondo">
+                        <h1 class="titleDos">:nth-last-of-type</h1>
+                        <p>Coincide con uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos, contando desde el final.</p>
+                        <div class="unico">
+                            <span>Este es un span.</span><br>
+                            <span>Este es otro span.</span><br>
+                            <em>Esto esta enfatizado.</em><br>
+                            <span>morado</span><br>
+                            <strike>Esto está tachado.</strike><br>
+                            <span>Aquí hay un último span.</span><br>
+                        </div>
+                            
+                    <article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="dos fondo">
+                        <h1 class="titleDos">:nth-of-type</h1>
+                        <p>Selecciona cada (x) elementos entre cualquier grupo de hermanos.</p>
+                        <div class="caritaa">
+                            <p class="carita">😄1</p>
+                            <p class="carita">😄2</p>
+                            <p class="carita">😄3</p>
+                            <p class="carita">😄4</p>
+                            <p class="carita">😄5</p>
+                        </div>
+                        
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="tres fondo">
+                        <h1 class="titleDos">:only-child</h1>
+                        <p>Representa un elemento sin hermanos.</p>
+                        <div class="solito">
+                            <p class="only">Soy una <strong>P</strong>  hijo único y solitario de una <strong>div.</strong> </p>
+                            
+                        </div>
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="cuatro fondo">
+                        <h1 class="titleDos">:only-of-type</h1>
+                        <p>Representa un elemento que no tiene hermanos del mismo tipo.</p>
+                        <main class="main">
+                            <div>Soy un `div` #1.</div><br>
+                            <p>Yo soy el único `p` entre mis hermanos.</p><br>
+                            <div>Soy un `div` #2.</div><br>
+                            <div>Soy un `div` #3.</div><br>
+                        </main>
+                        
+                    </article>
+                </section>
+            </div> 
+            <!--ocho fila-->
+            <div class="row ocho box">
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="uno fondo">
+                        <h1 class="titleDos">:optional</h1>
+                        <p>Selecciona cualquier opción en un formulario.</p>
+                        <input type="text" placeholder="opinión?" class="opinion">
+                            
+                    <article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="dos fondo">
+                        <h1 class="titleDos">:out-of-range</h1>
+                        <p>Representa un elemento input cuyo valor actual está fuera de los límites de rango especificados por los atributos min y max.</p>
+                        <form action="" id="form1">
+                            <ul>Los valores entre 1 y 10 son válidos.
+                              <li>
+                                <input id="value1" name="value1" type="number" placeholder="1 a 10" min="1" max="10" value="12">
+                                <label for="value1">Tu valor esta </label>
+                              </li>
+                            </ul>
+                          </form>
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="tres fondo">
+                        <h1 class="titleDos">:read-only</h1>
+                        <p>Representa un elemento que ya no es editable por el usuario (como un input).</p>
+                        <input type="text" placeholder="solo lectura, no editable" class="sololeer">
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="cuatro fondo">
+                        <h1 class="titleDos">:read-write</h1>
+                        <p>representa un elemento (como un input) que es editable por el usuario.</p>
+                        <input type="text" value="Escribe lo que quieras aquí🧡." class="querer">
+                        
+                    </article>
+                </section>
+            </div>
+             <!--novena fila-->             
+            <div class="row nueve box">
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="uno fondo">
+                        <h1 class="titleDos">:required</h1>
+                        <p>Esta pseudo-clase es útil para resaltar campos que deben tener datos válidos antes de que se pueda enviar un formulario.</p>
+                        <input type="text" placeholder="Nombre*" required class="obligatorio">
+                        
+                    <article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="dos fondo">
+                        <h1 class="titleDos">:right</h1>
+                        <p>Utilizada con la regla-at @page, representa todas las páginas de la derecha de un documento impreso.</p>
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="tres fondo">
+                        <h1 class="titleDos">:root</h1>
+                        <p>Selecciona el elemento raíz de un árbol que representa el documento (html).</p>
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="cuatro fondo">
+                        <h1 class="titleDos">:scope</h1>
+                        <p>Representa elementos que son un punto de referencia para los selectores para que coincida en contra.</p>
+                        
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="cuatro fondo">
+                        <h1 class="titleDos">:target</h1>
+                        <p>Selecciona un elemento con una ID que coincida con el fragmento de la URL actual.</p>
+                        <li><a href="#p1">¡Salta al primer párrafo!</a></li>
+                        <li><a href="#p2">¡Salta al segundo párrafo!</a></li>
+                       
+                        <p id="p1">Párrafo 1</p>
+                        <p id="p2">Párrafo 2</p>
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="cuatro fondo">
+                        <h1 class="titleDos">:valid</h1>
+                        <p>Esta pseudo-clase es útil para resaltar los campos correctos para el usuario.</p>
+                        <input type="email" value="correcto@example.com" class="email">
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="cuatro fondo">
+                        <h1 class="titleDos">:visited</h1>
+                        <a  class="visited" href="#test-visited-link">¿Ya has visitado este enlace?</a><br>
+                        <a class="visited" href="">Ya has visitado este enlace.</a>     
+                    </article>
+                </section>
+            </div> 
+            
+            
+
+            <!--pseudo-elementos--> 
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <section class="titulo">
+                        <h1 class="title">Pseudo-elementos</h1>
+                    </section>
+                </div>
+            </div>
+            <!--cajas-->
+            <div class="row uno box">
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="uno fondo">
+                        <h1 class="titleDos">::after </h1>   
+                        <p class="after">Añadir algún contenido despues, por medio de una indicación.</p>
+                    <article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="dos fondo">
+                        <h1 class="titleDos">::before </h1>   
+                        <p class="before"> Añadir algún contenido antes, por medio de una indicación.</p>
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="tres fondo">
+                        <h1 class="titleDos">::first-letter </h1>   
+                        <p class="capital">Letra capital de un texto. También es modificable su suente y color.</p>
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="cuatro fondo">
+                        <h1 class="titleDos">::first-line </h1>   
+                        <p class="primero">Los estilos se mantendrán en la primeria línea sin importar los breakpoints.</p>
+                    </article>
+                </section>
+            </div> 
+
+            <div class="row dos box">
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="uno fondo">
+                        <h1 class="titleDos">::selection</h1>   
+                        <p class="selection">Al seleccionar con el puntero una parte del parrafo se marcará de un color seleccionado en estilos. Como cuando se copea un texto.</p>
+                    <article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="dos fondo">
+                        
+                            <h1 class="titleDos">::backdrop</h1>   
+                            <p>Es un cuadro del tamaño de la ventana gráfica que se representa inmediatamente debajo de cualquier elemento que se presente en modo de pantalla completa.</p>
+                            <video src="video/pandemia.mp4" autoplay="true" muted="true" loop="true" style="width: 100%;"></video>
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="tres fondo">
+                        <h1 class="titleDos">::placeholder</h1>   
+                        <p class="backdrop">Texto provisional que puede dar indicaciones "<input placeholder="👉 Escribe.." class="escribe">" en un elemento como <strong>input</strong>  donde es utilizado para introducir datos.</p>
+                    </article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="cuatro fondo">
+                        <h1 class="titleDos">::marker</h1>
+                            <ul class="backdrop">
+                                <li class="">Los marcadores de las listas </li>
+                                <li class="">se puedenmodificar para que </li>
+                                <li class="">tengan independencia.</li>
+                                <li class="">Como en este caso el color.</li>
+                            </ul>
+                    </article>
+                </section>
+            </div>
+
+            <div class="row tres box">
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="uno fondo">
+                        <h1 class="titleDos">::spelling-error</h1>
+                        <p>Representa un segmento de texto que el agente de usuarios ha marcado como deletreado incorrectamente.</p>
+                        <p contenteditable spellcheck="true" class="mal">My friends are coegdfgfddffbgning to the party tonight.</p>
+                    <article>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <article class="dos fondo">
+                        <h1 class="titleDos">::grammar-error</h1>
+                        <p class="error">Representa un segmento de texto que el navegador ha marcado con erróres gramaticales.
+                        </p>
+                    </article>
+                </section>
+
+        </div>
+    </div>
+    <scrip src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Using JavaScript to open the page in fullscreen mode
+        var elem = document.documentElement;
+        function openFullscreen() {
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.webkitRequestFullscreen) { /* Safari */
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) { /* IE11 */
+            elem.msRequestFullscreen();
+          }
+        }
+        
+        function closeFullscreen() {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.webkitExitFullscreen) { /* Safari */
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) { /* IE11 */
+            document.msExitFullscreen();
+          }
+        }
+        </script>      
+  </body>
+</html>
